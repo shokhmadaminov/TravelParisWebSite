@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 1000px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    font-family: 'inika';
+    position: relative;
+}
+.container{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    width: 85%;
+    background-color: #fff;
+    padding: 0px 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+
+
+
+
+
+.navbar button{
+    padding: 6px;
+    cursor: pointer;
+    display: none;
+}
+/*
+.nav-bottom{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-100%);
+    background-color: #fff;
+    z-index: -1;
+}
+.nav-bottom.open-nav{
+    transform: translateY(100%);
+}
+
+.nav-bottom a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px 0;
+    color: #797979;
+}
+.nav-bottom a:hover{
+    color: #505050;
+}
+*/
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-span1 img{
+    height: 30px;
+    margin-right: 5px;
+}
+.nav-span1{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    color: green;
+    font-family: 'eagle lake';
+}
+.nav-span2 a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #797979;
+}
+.nav-span2 a:hover{
+    color: #505050;
+}
+.nav-span3 a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+
+
+
+
+
+
+.img-container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url(./img/parisimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-container h1{
+    color: #fff;
+    font-family: 'eagle lake';
+    font-size: 3rem;
+    margin: 0 100px;
+    
+}
+.btn-grad {background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)}
+.btn-grad {
+   margin: 10px 100px;
+   padding: 15px 15px;
+   text-align: left;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 5px;
+   display: inline-block;
+   width: 9rem;
+   box-sizing: content-box;
+   border: 2px solid #797979;
+   cursor: pointer;
+}
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+.main-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.main-cards img{
+    height: 70px;
+}
+.card{
+    width: 230px;
+    margin: 40px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    padding: 10px 5px;
+}
+.card p{
+    font-size: 13px;
+    color: #797979;
+    line-height: 1.5;
+}
+.card:hover{
+    background-color: #797979;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    color: #fff;
+}
+.card:hover p{
+    color: #fff;
+}
+
+
+
+
+
+
+.img-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+.text-card{
+    width: 250px;
+}
+.text-card p{
+    font-size: 13px;
+    color: #797979;
+    line-height: 1.5;
+}
+
+.btn-grad-1 {background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%)}
+.btn-grad-1 {
+   margin: 10 0px;
+   padding: 10px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 5px;
+   display: inline-block;
+   cursor: pointer;
+   border: none;
+}
+
+.btn-grad-1:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
+
+.img-card1, .img-card2, .img-card3{
+    height: 250px;
+    width: 200px;
+    margin: 20px 20px;
+    font-family: 'eagle lake';
+}
+.img-card1{
+    background: url('./img/egypt.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img-card2{
+    background: url('./img/dubai.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img-card3{
+    background: url('./img/rome.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img-cards h3{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+.beacon-container{
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+.beacon-img{
+    background: url('./img/beacon.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 300px;
+}
+.beacon-text{
+    height: 350px ;
+    width: 400px;
+    margin-left: 60px;
+}
+.beacon-text img{
+    height: 40px;
+}
+.float{
+    display: flex;
+    align-items: center;
+}
+.beacon-container p{
+    color: #797979;
+    margin-left: 50px;
+}
+.beacon-container h3{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.choose-your-destination{
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+
+}
+.choose-your-destination h2{
+    font-family: 'eagle lake';
+    color: #5b5b5b;
+    margin: 20px 0;
+}
+.destination-big{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    width: 100%;
+}
+.destination-cont1{
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.destination-cont1 img{
+    height: 400px;
+    width: 100%;
+    margin-top: 20px ;
+}
+.div{
+    height: 110px;
+    width:110px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #bebebe;
+}
+.bottom-div{
+    height: 80px;
+    width: 270px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    transform: translateY(-40px);
+    z-index: 2;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+}
+.bottom-div:hover{
+    cursor: pointer;
+    border: 2px solid rgb(61, 61, 61);
+}
+.bottom-div h6{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.bottom-div p{
+    font-size: 13px;
+    color: #797979;
+}
+
+
+.destination-cont2{
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #fff;
+    align-self: flex-start ;
+    margin: 0 10px;
+}
+.destination-cont2 img{
+    height: 400px;
+    width: 100%;
+}
+.destination-cont2 button{
+    padding: 13px 24px;
+    background-color: lightcoral;
+    margin: 50px auto 0 auto; 
+    color: #fff;
+    border-radius: 1px;
+    border: none;
+}
+.destination-cont2 button:hover{
+    background-color: rgb(255, 75, 75);
+    cursor: pointer;
+}
+
+.destination-cont3{
+    min-height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.destination-cont3 img{
+    height: 400px;
+    width: 100%;
+    margin-top: 20px ;
+}
+.div2{
+    height: 110px;
+    width:110px;
+    align-self: start;
+    background: url('./img/Vector.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.air-cotainer{
+    min-height: 350px;
+    width: 90%;
+    background-color: #52ACFF;
+    background-image: linear-gradient(65deg, #9ccbf7 25%, #f5ecb2 100%);
+    border-radius: 5px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.left-cont{
+    height: 300px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-cont h2{
+    font-family: 'eagle lake';
+    font-size: 32px;
+    margin-left: 60px;
+}
+.left-cont img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.button-span{
+    display: flex;
+    margin-left: 60px;
+}
+.left-cont button{
+    width: 130px;
+    padding: 7px 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.google-button{
+    background-color: #505050;
+    margin-right: 15px;
+}
+.apple-button{
+    background-color: rgb(255, 75, 75);
+}
+.right-cont{
+    height: 300px;
+    width: 45%;
+    
+}
+.air1{
+    margin-top: 50px;
+    height: 80px;
+}
+.airtravel{
+    height: 165px;
+    
+}
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+.ravel{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 35%;
+    margin: 20px 30px;
+}
+.ravel span{
+    display: flex;
+    align-items: center;
+}
+.ravel h5{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    font-family: 'eagle lake';
+    color: green;
+}
+.ravel img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.ravel i{
+    margin-right: 6px;
+    color: rgb(184, 54, 54);
+}
+.ravel p{
+    color: #797979;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+
+.quick-links, .support{
+    min-width: 20%;
+    margin: 20px 30px;
+}
+.footer h3{
+    font-size: 20px;
+}
+.quick-links p, .support p{
+    color: #797979;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.support{
+    min-width: 20%;
+}
+.support p:hover{
+    color: rgb(184, 54, 54);
+}
+.quick-links p:hover{
+    color: rgb(184, 54, 54);
+}
+.support i{
+    margin-right: 5px;
+}
+.quick-links i{
+    margin-right: 5px;
+}
+
+
+.newsletter{
+    min-width: 20%;
+}
+.newsletter input{
+    height: 2.3rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: #e4e4e4;
+}
+.newsletter button{
+    padding: 13px 24px;
+    background-color: lightcoral;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 1px;
+    border: none;
+}
+.newsletter button:hover{
+    background-color: rgb(255, 75, 75);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1300px){
+    .air1{
+        height: 70px;
+    }
+    .airtravel{
+        width: 30vw;
+    }
+}
+@media (max-width: 1000px){
+    .air-cotainer{
+        flex-direction: column-reverse;
+        min-height: 700px;
+    }
+
+}
+
+
+
+@media (max-width: 800px){
+    .nav-span2{
+        display: none;
+    }
+    .navbar button{
+        display: block;
+    }
+    .img-container{
+        height: 70vh;
+    }
+    .img-container h1{
+        font-size: 2rem;
+    }
+    .btn-grad {
+       margin: 10px 100px;
+       padding: 5px 10px;     
+       width: 6rem;
+       box-sizing: content-box;
+       font-size: 70%;
+    }
+    .beacon-container{
+        flex-wrap: wrap;
+    }
+    .beacon-img{
+        margin: 0;
+    }
+    .air-cotainer{
+        padding: 1rem;
+    }
+    .airtravel{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 650px){
+
+    .img-container{
+        height: 60vh;
+    }
+    .img-container h1{
+        font-size: 1rem;
+    }
+
+
+    .choose-your-destination h2{
+        font-size: 20px;
+    }
+    .destination-big{
+        min-height: 500px;
+    }
+    .destination-cont1{
+        height: 500px;
+        margin: 0;
+    }
+    .div{
+        display: none;
+    }
+    .div2{
+        display: none;
+    }
+    
+
+    .air-cotainer{
+        min-height: 400px;
+        margin: 40px 0;
+        align-items:flex-start;
+    }
+    .left-cont{
+        min-height: 300px;
+        width: 100%;
+        display: flex;
+    }
+    .left-cont h2{
+        font-size: 22px;
+        margin-left: 30px;
+    }
+    .left-cont img{
+        height: 20px;
+        width: 20px;
+    }
+    .button-span{
+        display: flex;
+        margin-left: 30px;
+    }
+    .right-cont{
+        height: 100px;
+        width: 100%;
+        
+    }
+    .air1{
+        margin-top: 50px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 530px){
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+    .img-container h1{
+        margin: 40px;
+    }
+    .btn-grad {
+       margin: 10px 40px;
+       padding: 5px 10px;     
+       width: 6rem;
+       box-sizing: content-box;
+       font-size: 70%;
+    }
+    .card{
+        margin: 30px 20px;
+    }
+    .beacon-text h2{
+        font-size: 20px;
+    }
+    .beacon-text h3{
+        font-size: 17px;
+    }
+    .destination-cont1, .destination-cont2, .destination-cont3{
+        height: 500px;
+        width: 200px;
+    }
+    .bottom-div{
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px){
+   .nav-span3 a{
+       display: none;
+   }
+   .container{
+       padding: 10px;
+   }
+   .beacon-text h2{
+        font-size: 15px;
+    }
+    .beacon-text h3{
+        font-size: 13px;
+
+    }
+    .beacon-text p{
+        font-size: 10px;
+    }
+    .beacon-text img{
+        height: 20px;
+    }
+
+    .air-cotainer{
+        margin:40px 0px;
+        margin-right: 0;
+        align-items:flex-start;
+    }
+    .left-cont{
+        height: 100px;
+        width: 100%;
+    }
+    .left-cont h2{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .left-cont img{
+        height: 15px;
+        width: 15px;
+    }
+    .button-span{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .left-cont button{
+        margin-top: 10px
+    }
+    .right-cont{
+        height: 60px;
+        width: 100%;
+        
+    }
+    .air1{
+        margin-top: 20px;
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 350px){
+    .navbar{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem 0;
+    }
+    .btn-grad {
+        margin: 10px 40px;
+        padding: 5px 10px;     
+        width: 5rem;
+        box-sizing: content-box;
+        font-size: 60%;
+     }
+     .card{
+        margin: 10px 10px;
+    }
+    .text-card{
+        width: 200px;
+    }
+    .text-card p{
+        font-size: 9px;
+        color: #797979;
+        line-height: 1.5;
+    }
+    .text-card h2{
+        font-size: 13px;
+    }
+
+    .beacon-img{
+        height: 250px;
+        width: 150px;
+    }
+    .beacon-text{
+        margin: 0;
+    }
+    .beacon-text h3{
+        font-size: 10px;
+
+    }
+    .beacon-text p{
+        font-size: 8px;
+    }
+    .beacon-text img{
+        height: 15px;
+    }
+
+    .destination-cont1 img, .destination-cont2 img, .destination-cont3 img{
+        height: 250px;
+        width: 170px;
+    }
+    .bottom-div{
+        width: 150px;
+        min-height: 100px;
+    }
+
+    .left-cont h2{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .button-span{
+        margin-left: 5px;
+    }
+    .left-cont button{
+        margin-top: 10px
+    }
+
+
+
+    .footer{
+        margin-bottom: 2rem;
+    }
+    
+    
+    .ravel{
+        margin: 20px 10px;
+    }
+    .ravel h5{
+        font-size: 15px;
+    }
+    .ravel img{
+        height: 30px;
+        width: 30px;
+    }
+    .ravel p{
+        font-size: 13px;
+    }
+    
+    
+    .quick-links, .support{
+        min-width: 100%;
+        margin: 10px 10px;
+    }
+    .footer h3{
+        font-size: 15px;
+    }
+    .quick-links p, .support p{
+        margin: 12px 0;
+        font-size: 10px;
+    }
+    
+    .support{
+        min-width: 100%;
+    }
+    
+    
+    .newsletter{
+        min-width: 100%;
+    }
+    .newsletter input{
+        height: 1.5rem;
+        font-size: 0.6rem;
+    }
+    .newsletter button{
+        padding: 10px 15px;
+    }
+
+ }
+
+
+
+
+
+
+
